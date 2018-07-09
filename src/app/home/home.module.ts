@@ -1,5 +1,5 @@
 /**
- * Created by sagar on 12/2/18.
+ * Created by Sagar Jadhav.
  */
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
@@ -12,8 +12,22 @@ import {AmexioWidgetModule} from "amexio-ng-extensions";
 const routes: Routes = [
   { path: '', component:HomeComponent,
     children: [
-
-    ]
+          	{
+     	path: 'core/department', loadChildren: './../pages/canvasproapp/core/department/department.module#DepartmentModule'
+     	},	
+	     	{
+     	path: 'core/departmentlist', loadChildren: './../pages/canvasproapp/core/departmentlist/departmentlist.module#DepartmentlistModule'
+     	},	
+	     	{
+     	path: 'core/getstatedata', loadChildren: './../pages/canvasproapp/core/getstatedata/getstatedata.module#GetstatedataModule'
+     	},	
+	     	{
+     	path: 'core/testui', loadChildren: './../pages/canvasproapp/core/testui/testui.module#TestuiModule'
+     	},	
+	     	{
+     	path: 'core/testcomp', loadChildren: './../pages/canvasproapp/core/testcomp/testcomp.module#TestcompModule'
+     	},	
+	    ]
   }
 ];
 

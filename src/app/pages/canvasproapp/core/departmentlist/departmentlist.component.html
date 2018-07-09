@@ -1,0 +1,10 @@
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-datagrid [title]="'Department List'" [page-size]="10" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [enable-column-fiter]="true">
+            <amexio-data-table-column [text]="'Id'" [data-index]="'id'" [data-type]="'string'">
+            </amexio-data-table-column>
+            <amexio-data-table-column [text]="'Name'" [data-index]="'name'" [data-type]="'string'">
+            </amexio-data-table-column>
+        </amexio-datagrid>
+    </amexio-column>
+</amexio-row>

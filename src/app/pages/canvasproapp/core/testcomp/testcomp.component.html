@@ -1,0 +1,26 @@
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-btn-group [size]="'default'">
+            <amexio-button [label]="'2'" [type]="'primary'" [tooltip]="'Link'">
+            </amexio-button>
+            <amexio-button [label]="'1'" [type]="'primary'" [tooltip]="'Link'">
+            </amexio-button>
+        </amexio-btn-group>
+        <amexio-btn-dropdown [label]="'Button'" [type]="'default'" [size]="'default'">
+            <amexio-btn-dropdown-item [label]="'link1'">
+            </amexio-btn-dropdown-item>
+            <amexio-btn-dropdown-item [label]="'link2'">
+            </amexio-btn-dropdown-item>
+        </amexio-btn-dropdown>
+        <amexio-image [tooltip]="'Admin user'" [height]="''" [path]="'assets/dna/images/user.png'">
+        </amexio-image>
+        <amexio-chart-pie *ngIf="pichartchartLocalData" [data]="pichartchartLocalData" [height]="'400px'" [width]="'100%'">
+            <amexio-chart-title [title]="'daily activites'" [font-size]="15" [bold]="false" [italic]="false">
+            </amexio-chart-title>
+
+            <amexio-chart-legend [position]="'bottom'" [max-lines]="2" [font-name]="'Times-Roman'" [font-size]="18" [alignment]="'center'" [bold]="false">
+            </amexio-chart-legend>
+
+        </amexio-chart-pie>
+    </amexio-column>
+</amexio-row>
