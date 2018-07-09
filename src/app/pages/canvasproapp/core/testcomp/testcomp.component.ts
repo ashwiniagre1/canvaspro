@@ -14,7 +14,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 export class TestcompComponent implements OnInit
 {
 	testcompModel:TestcompModel;
-	pichartchartLocalData:any;
+	dchartchartLocalData:any;
 	
 	constructor(private http: HttpClient,private router: Router)
 	{
@@ -22,20 +22,20 @@ export class TestcompComponent implements OnInit
 	}
 	ngOnInit()
 	{
-		this.fetchpichartchartLocalDataChart();
+		this.fetchdchartchartLocalDataChart();
 	}
 	
 	
-	fetchpichartchartLocalDataChart()
+	fetchdchartchartLocalDataChart()
 	{
 		let reponseData: any;
-		this.http.get('https://api.myjson.com/bin/18hpt2').subscribe(response => 
+		this.http.get('https://api.myjson.com/bins/18hpt2').subscribe(response => 
 		{
 			reponseData = response;
 		},
 	(err) => {},
 		() => {
-			this.pichartchartLocalData = reponseData.data;
+			this.dchartchartLocalData = reponseData.data;
 		}
 		);
 	}
