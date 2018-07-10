@@ -27,6 +27,9 @@ const routes: Routes = [
 	     	{
      	path: 'core/testcomp', loadChildren: './../pages/canvasproapp/core/testcomp/testcomp.module#TestcompModule'
      	},	
+	     	{
+     	path: 'core/uione', loadChildren: './../pages/canvasproapp/core/uione/uione.module#UioneModule'
+     	},	
 	    ]
   }
 ];

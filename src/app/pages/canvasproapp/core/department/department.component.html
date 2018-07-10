@@ -12,10 +12,10 @@
         </amexio-dropdown>
         <amexio-radio-group [field-label]="'TestRadio'" name="departmentModel.radi" [display-field]="'name'" [value-field]="'id'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [data]="radi_Data" [horizontal]="true">
         </amexio-radio-group>
-        <amexio-typeahead [(ngModel)]="departmentModel.testtype" name="departmentModel.testtype" [field-label]="'Type Ahead'" [display-field]="'name'" [value-field]="'id'" [key]="'name'" [trigger-char]="1" [data]="localData5307810000">
-        </amexio-typeahead>
         <amexio-checkbox-group [field-label]="'state'" [display-field]="'stateName'" [value-field]="'stateId'" [data]="chk_Data" [horizontal]="true">
         </amexio-checkbox-group>
+        <amexio-typeahead [(ngModel)]="departmentModel.testtype" name="departmentModel.testtype" [field-label]="'Type Ahead'" [display-field]="'stateName'" [value-field]="'stateId'" [trigger-char]="1" [data]="testtype_Data">
+        </amexio-typeahead>
 
     </amexio-body>
 

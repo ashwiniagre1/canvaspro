@@ -14,7 +14,6 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 export class DepartmentComponent implements OnInit
 {
 	departmentModel:DepartmentModel;
-	testtype_Data:any;
 	chk_Data:any;
 	successMsgData:any[]=[];
 	
@@ -22,7 +21,6 @@ export class DepartmentComponent implements OnInit
 	constructor(private http: HttpClient,private router: Router)
 	{
 		this.departmentModel=new DepartmentModel();
-		this.testtype_Data=[];
 		this.chk_Data=[];
 	}
 	ngOnInit()
@@ -48,7 +46,7 @@ export class DepartmentComponent implements OnInit
 	}
 	countryBindResponse_1(response: any)
 	{
-		this.chk_Data=response.response;
+		this.testtype_Data=response.response;
 		
 	} 
 	onClick_save(eventData:any)
@@ -89,6 +87,6 @@ export class DepartmentModel
 	 name: string; 
 	 country: string; 
 	 radi: string; 
-	 testtype: string; 
 	 chk: string; 
+	 testtype: string; 
 }
