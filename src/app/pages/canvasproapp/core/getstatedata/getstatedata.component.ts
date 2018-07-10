@@ -1,6 +1,6 @@
 /**
  * Created by: deepali arvind
- * Date: 09/07/2018
+ * Date: 10/07/2018
  * Organization: Individual	
  */
 import {Component, OnInit} from '@angular/core';
@@ -15,6 +15,8 @@ export class GetstatedataComponent implements OnInit
 {
 	getstatedataModel:GetstatedataModel;
 	stateId_Data:any;
+	radiogroupData:any;
+	stateaaa_Data:any;
 	successMsgData:any[]=[];
 	
 	
@@ -22,6 +24,8 @@ export class GetstatedataComponent implements OnInit
 	{
 		this.getstatedataModel=new GetstatedataModel();
 		this.stateId_Data=[];
+	this.radiogroupData={"data":[{"name":"female","id":"1"},{"name":"male","id":"2"}]};
+		this.stateaaa_Data=[];
 	}
 	ngOnInit()
 	{
@@ -47,8 +51,30 @@ export class GetstatedataComponent implements OnInit
 	countryIdBindResponse_1(response: any)
 	{
 		this.stateId_Data=response.response;
-		this.successMsgData.push('Success Message:'+response.message);
+		this.successMsgData.push('Success Message:'+' '+response.message);
 		
+		
+	} 
+	onSingleSelect_cntry(eventData:any)
+	{ 
+		let response: any;
+		this.http.get('https://uat.amexio.org:8991/rest-sample-app/api/state/findbycountryid'+'/'+this.getstatedataModel.cntry).subscribe(
+		(res: any) =>
+		{
+			response = res;
+		},
+		(error: any) => 
+		{
+			
+		},
+		() => 
+		{
+			this.cntryBindResponse_1(response);
+		});
+	}
+	cntryBindResponse_1(response: any)
+	{
+		this.stateaaa_Data=response.response;
 		
 	} 
 	
@@ -59,4 +85,8 @@ export class GetstatedataModel
 {
 	 countryId: string; 
 	 stateId: string; 
+	 testlocal: string; 
+	 type: string; 
+	 cntry: string; 
+	 stateaaa: string; 
 }
