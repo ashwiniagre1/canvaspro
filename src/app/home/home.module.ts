@@ -30,6 +30,9 @@ const routes: Routes = [
 	     	{
      	path: 'core/uione', loadChildren: './../pages/canvasproapp/core/uione/uione.module#UioneModule'
      	},	
+	     	{
+     	path: 'core/testtabui', loadChildren: './../pages/canvasproapp/core/testtabui/testtabui.module#TesttabuiModule'
+     	},	
 	    ]
   }
 ];

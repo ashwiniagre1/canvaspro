@@ -6,19 +6,19 @@
 import { NgModule } from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
-import { UioneComponent } from './uione.component';
+import { TesttabuiComponent } from './testtabui.component';
 import {AmexioWidgetModule, AmexioChartsModule,AmexioDashBoardModule,AmexioMapModule,CommonDataService} from "amexio-ng-extensions";
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
 { 
-	path: '', component: UioneComponent 
+	path: '', component: TesttabuiComponent 
 }
 ];
 @NgModule(
 {
 	declarations:[
-	    UioneComponent
+	    TesttabuiComponent
 	 ],
 	imports: [
 	FormsModule,
@@ -33,6 +33,6 @@ const routes: Routes = [
 	providers: [CommonDataService]
 }
 )
-export class UioneModule 
+export class TesttabuiModule 
 { 
 }

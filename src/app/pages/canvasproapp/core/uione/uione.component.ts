@@ -1,6 +1,6 @@
 /**
  * Created by: deepali arvind
- * Date: 10/07/2018
+ * Date: 11/07/2018
  * Organization: Individual	
  */
 import {Component, OnInit} from '@angular/core';
@@ -32,5 +32,5 @@ export class UioneComponent implements OnInit
 export class UioneModel
 {
 	 chk: string; 
-	 depart: string; 
+	 chkkkkkkkkk: string; 
 }
