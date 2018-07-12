@@ -7,8 +7,8 @@
         </amexio-dropdown>
         <amexio-radio-group [field-label]="'Radio'" name="getstatedataModel.testlocal" [data-reader]="'data'" [display-field]="'name'" [value-field]="'id'" [data]="radiogroupData" [horizontal]="true">
         </amexio-radio-group>
-        <amexio-typeahead [(ngModel)]="getstatedataModel.type" name="getstatedataModel.type" [field-label]="'Type Ahead'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [display-field]="'name'" [value-field]="'id'"
-            [key]="'name'" [trigger-char]="1">
+        <amexio-typeahead [(ngModel)]="getstatedataModel.type" name="getstatedataModel.type" [field-label]="'Type Ahead'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/country/findall'" [http-method]="'get'" [display-field]="'countryName'" [value-field]="'id'"
+            [key]="'countryName'" [trigger-char]="1">
         </amexio-typeahead>
         <amexio-dropdown [(ngModel)]="getstatedataModel.cntry" name="getstatedataModel.cntry" [search]="true" [field-label]="'Country1'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/country/findall'" [http-method]="'get'" [display-field]="'countryName'"
             [value-field]="'id'" (onSingleSelect)="onSingleSelect_cntry($event)">

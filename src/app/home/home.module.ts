@@ -57,6 +57,18 @@ const routes: Routes = [
 	     	{
      	path: 'core/testchart', loadChildren: './../pages/canvasproapp/core/testchart/testchart.module#TestchartModule'
      	},	
+	     	{
+     	path: 'core/charttest', loadChildren: './../pages/canvasproapp/core/charttest/charttest.module#CharttestModule'
+     	},	
+	     	{
+     	path: 'core/testdash', loadChildren: './../pages/canvasproapp/core/testdash/testdash.module#TestdashModule'
+     	},	
+	     	{
+     	path: 'core/testmap', loadChildren: './../pages/canvasproapp/core/testmap/testmap.module#TestmapModule'
+     	},	
+	     	{
+     	path: 'core/testdatapoint', loadChildren: './../pages/canvasproapp/core/testdatapoint/testdatapoint.module#TestdatapointModule'
+     	},	
 	    ]
   }
 ];

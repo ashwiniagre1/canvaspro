@@ -7,14 +7,15 @@
         </amexio-text-input>
         <amexio-text-input [field-label]="'Dept Name'" [(ngModel)]="departmentModel.name" name="departmentModel.name" [allow-blank]="true" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true">
         </amexio-text-input>
-        <amexio-dropdown [(ngModel)]="departmentModel.country" name="departmentModel.country" [search]="true" [field-label]="'country'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/country/findall'" [http-method]="'get'" [data]="country_Data"
-            [display-field]="'countryName'" [value-field]="'id'" (onSingleSelect)="onSingleSelect_country($event)">
+        <amexio-dropdown [(ngModel)]="departmentModel.country" name="departmentModel.country" [search]="true" [field-label]="'country'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/country/findall'" [http-method]="'get'" [display-field]="'countryName'"
+            [value-field]="'id'" (onSingleSelect)="onSingleSelect_country($event)">
         </amexio-dropdown>
-        <amexio-radio-group [field-label]="'TestRadio'" name="departmentModel.radi" [display-field]="'name'" [value-field]="'id'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [data]="radi_Data" [horizontal]="true">
+        <amexio-radio-group [field-label]="'TestRadio'" name="departmentModel.radi" [display-field]="'name'" [value-field]="'id'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [horizontal]="true">
         </amexio-radio-group>
         <amexio-checkbox-group [field-label]="'state'" [display-field]="'stateName'" [value-field]="'stateId'" [data]="chk_Data" [horizontal]="true">
         </amexio-checkbox-group>
-        <amexio-typeahead [(ngModel)]="departmentModel.testtype" name="departmentModel.testtype" [field-label]="'Type Ahead'" [display-field]="'stateName'" [value-field]="'stateId'" [trigger-char]="1" [data]="testtype_Data">
+        <amexio-typeahead [(ngModel)]="departmentModel.testtype" name="departmentModel.testtype" [field-label]="'Type Ahead'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/country/findall'" [http-method]="'get'" [display-field]="'countryName'"
+            [value-field]="'countryCode1'" [trigger-char]="1">
         </amexio-typeahead>
 
     </amexio-body>
