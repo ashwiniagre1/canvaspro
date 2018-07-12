@@ -19,3 +19,22 @@
         </amexio-tab-view>
     </amexio-column>
 </amexio-row>
+
+<amexio-vertical-tab-view>
+    <amexio-tab [title]="'DeptList'" [icon]="''">
+        <amexio-listbox [data]="list_Data" [height]="250" [search-placeholder]="'Search contact'" [header]="'Dept'">
+        </amexio-listbox>
+    </amexio-tab>
+    <amexio-tab [title]="'Department'" [icon]="''">
+        <amexio-form [header]="true" [show-error]="true" [body-height]="'50'" form-name="'form_3679510000'" [header-align]="'right'" [footer-align]="'right'">
+
+            <amexio-form-body>
+
+            </amexio-form-body>
+
+            <amexio-form-action>
+
+            </amexio-form-action>
+        </amexio-form>
+    </amexio-tab>
+</amexio-vertical-tab-view>

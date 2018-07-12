@@ -1,6 +1,8 @@
 <amexio-row>
     <amexio-column size="12">
         <amexio-panel [header]="true" [title]="'Panel'" [expanded]="true" [height]="300">
+            <amexio-button [form-bind]="'testtype'" (onClick)="onClick_testtype($event)">
+            </amexio-button>
         </amexio-panel>
     </amexio-column>
 </amexio-row>

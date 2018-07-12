@@ -51,6 +51,12 @@ const routes: Routes = [
 	     	{
      	path: 'core/testtreeone', loadChildren: './../pages/canvasproapp/core/testtreeone/testtreeone.module#TesttreeoneModule'
      	},	
+	     	{
+     	path: 'core/testbtn', loadChildren: './../pages/canvasproapp/core/testbtn/testbtn.module#TestbtnModule'
+     	},	
+	     	{
+     	path: 'core/testchart', loadChildren: './../pages/canvasproapp/core/testchart/testchart.module#TestchartModule'
+     	},	
 	    ]
   }
 ];
