@@ -8,29 +8,25 @@ import { Router } from '@angular/router';
 import { HttpClient, HttpParams } from '@angular/common/http';
 @Component(
 {
-	selector: 'testtabui',
-	templateUrl: 'testtabui.component.html'
+	selector: 'testlogin',
+	templateUrl: 'testlogin.component.html'
 })
-export class TesttabuiComponent implements OnInit
+export class TestloginComponent implements OnInit
 {
-	testtabuiModel:TesttabuiModel;
+	testloginModel:TestloginModel;
 	
 	constructor(private http: HttpClient,private router: Router)
 	{
-		this.testtabuiModel=new TesttabuiModel();
+		this.testloginModel=new TestloginModel();
 	}
 	ngOnInit()
 	{
 	}
 	
-	onSingleSelect_country(eventData:any)
-	{ 
-	} 
 	
 	
 }
 
-export class TesttabuiModel
+export class TestloginModel
 {
-	 country: string; 
 }

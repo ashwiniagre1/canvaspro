@@ -1,24 +1,24 @@
 /**
  * Created by: deepali arvind
- * Date: 10/07/2018
+ * Date: 12/07/2018
  * Organization: Individual	
  */
 import { NgModule } from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
-import { DepartmentComponent } from './department.component';
+import { TestradioComponent } from './testradio.component';
 import {AmexioWidgetModule, AmexioChartsModule,AmexioDashBoardModule,AmexioMapModule,CommonDataService} from "amexio-ng-extensions";
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
 { 
-	path: '', component: DepartmentComponent 
+	path: '', component: TestradioComponent 
 }
 ];
 @NgModule(
 {
 	declarations:[
-	    DepartmentComponent
+	    TestradioComponent
 	 ],
 	imports: [
 	FormsModule,
@@ -33,6 +33,6 @@ const routes: Routes = [
 	providers: [CommonDataService]
 }
 )
-export class DepartmentModule 
+export class TestradioModule 
 { 
 }

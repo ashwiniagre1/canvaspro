@@ -33,6 +33,24 @@ const routes: Routes = [
 	     	{
      	path: 'core/testtabui', loadChildren: './../pages/canvasproapp/core/testtabui/testtabui.module#TesttabuiModule'
      	},	
+	     	{
+     	path: 'core/testaccord', loadChildren: './../pages/canvasproapp/core/testaccord/testaccord.module#TestaccordModule'
+     	},	
+	     	{
+     	path: 'core/testformui', loadChildren: './../pages/canvasproapp/core/testformui/testformui.module#TestformuiModule'
+     	},	
+	     	{
+     	path: 'core/testlogin', loadChildren: './../pages/canvasproapp/core/testlogin/testlogin.module#TestloginModule'
+     	},	
+	     	{
+     	path: 'core/testradio', loadChildren: './../pages/canvasproapp/core/testradio/testradio.module#TestradioModule'
+     	},	
+	     	{
+     	path: 'core/testtree', loadChildren: './../pages/canvasproapp/core/testtree/testtree.module#TesttreeModule'
+     	},	
+	     	{
+     	path: 'core/testtreeone', loadChildren: './../pages/canvasproapp/core/testtreeone/testtreeone.module#TesttreeoneModule'
+     	},	
 	    ]
   }
 ];

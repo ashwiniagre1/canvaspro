@@ -1,0 +1,28 @@
+<amexio-form [header]="true" [show-error]="true" [body-height]="'50'" form-name="'form_4193910000'" [header-align]="'right'" [footer-align]="'right'">
+    <amexio-form-header>
+        Department
+    </amexio-form-header>
+
+    <amexio-form-body>
+        <amexio-text-input [field-label]="'dept Id'" [(ngModel)]="testformuiModel.deptId" name="testformuiModel.deptId" [allow-blank]="false" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true">
+        </amexio-text-input>
+        <amexio-text-input [field-label]="'dept name'" [(ngModel)]="testformuiModel.deptName" name="testformuiModel.deptName" [allow-blank]="false" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true" [enable-popover]="true">
+        </amexio-text-input>
+
+    </amexio-form-body>
+
+    <amexio-form-action>
+        <amexio-button [label]="'Save'" [type]="'success'" [tooltip]="'button'" [size]="'default'" [form-bind]="'form_4193910000'" (onClick)="onClick_btn($event)">
+        </amexio-button>
+
+    </amexio-form-action>
+</amexio-form>
+<amexio-notification [data]="successMsgData" [vertical-position]="'top'" [horizontal-position]="'right'" [close-on-escape]="true" [background-color]="'green'" [auto-dismiss-msg]="true" [auto-dismiss-msg-interval]="4000">
+    <ng-template #amexioNotificationTemplates let-row="row">
+        <amexio-box>
+            <amexio-image [icon-class]="'fa fa-check'">
+            </amexio-image> &nbsp;&nbsp;
+            <amexio-label size="small-bold" font-color="black">{{row}}</amexio-label>
+        </amexio-box>
+    </ng-template>
+</amexio-notification>
